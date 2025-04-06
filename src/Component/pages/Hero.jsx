@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaArrowRight } from "react-icons/fa";
+import profileImage from '../../assets/images/Untitled design.png'
 
 const names = ["Manish Mehta", "Front-End Developer", "Back-End Developer"];
 
@@ -67,7 +68,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="w-48 h-48 md:w-[350px] md:h-64 lg:w-[450px] lg:h-80 rounded-full mb-6 md:mb-0 flex items-center justify-center">
-        <img src="/src/assets/images/Untitled design.png" alt="Manish Mehta" />
+        <img src={profileImage} alt="Manish Mehta" />
       </div>
     </section>
   );

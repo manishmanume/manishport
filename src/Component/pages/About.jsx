@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import aboutImage from '../../assets/images/about.png'
+import aboutImage1 from '../../assets/images/about1.avif'
 
 const Counter = ({ target }) => {
   const [count, setCount] = useState(0);
@@ -89,7 +91,7 @@ export default function About() {
           className="grid grid-cols-2 gap-4"
         >
           <motion.img
-            src="/src/assets/images/about.png"
+            src={aboutImage}
             alt="Happy Clients"
             className="rounded-lg"
             initial={{ opacity: 0, scale: 0.8 }}
@@ -97,7 +99,7 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.2 }}
           />
           <motion.img
-            src="/src/assets/images/about1.avif"
+            src={aboutImage1}
             alt="Project Discussion"
             className="rounded-lg shadow-md"
             initial={{ opacity: 0, scale: 0.8 }}
