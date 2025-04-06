@@ -30,18 +30,28 @@ const Hero = () => {
     }
   }, [letterIndex, currentNameIndex]);
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="container-xxl pt-20 mx-auto min-h-screen flex flex-col-reverse md:flex-row items-center justify-center px-6 md:px-12 lg:px-20 gap-6">
       <div className="text-center md:text-left flex flex-col items-center md:items-start space-y-4">
         <h1 className="text-xl md:text-2xl lg:text-5xl font-bold text-gray-900">
-          Hi, I'm  
+          Hi, I'm
           <span className="text-amber-400 ml-2 animated-text">{displayedText}</span>
         </h1>
         <p className="text-sm md:text-[13px] lg:text-lg text-gray-500 md:w-[80%]">
           MERN Full-Stack Developer | React.js Developer | Node.js Developer | Version Control | MongoDB Developer | MySQL Developer
         </p>
         <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
-          <button className="flex items-center gap-2 text-sm sm:text-base lg:text-lg px-6 py-2 bg-yellow-500 rounded-full font-medium group text-white">
+          <button
+            onClick={scrollToContact}
+            className="flex items-center gap-2 text-sm sm:text-base lg:text-lg px-6 py-2 bg-yellow-500 rounded-full font-medium group text-white"
+          >
             Contact Me
             <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-2" />
           </button>

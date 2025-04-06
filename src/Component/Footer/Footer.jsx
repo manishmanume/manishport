@@ -1,33 +1,43 @@
-import React from 'react';
+import React from "react";
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-8">
-      <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-        <h1 className="text-2xl font-bold mb-4 md:mb-0">Manish Mehta</h1>
+    <footer className="bg-gray-900 text-white px-6 py-8 mt-10">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0">
+        
+        <div className="text-center md:text-left">
+          <h2 className="text-xl font-semibold mb-2">Manish Mehta.</h2>
+          <p className="flex items-center justify-center md:justify-start gap-2">
+            <FaEnvelope /> mehtamanish9176@gmail.com
+          </p>
+          <p className="flex items-center justify-center md:justify-start gap-2 mt-1">
+            <FaPhoneAlt /> +91 8307936116
+          </p>
+        </div>
 
-        <ul className="flex space-x-6 mb-4 md:mb-0">
-          <li><a href="#" className="hover:text-gray-400">Home</a></li>
-          <li><a href="#" className="hover:text-gray-400">About</a></li>
-          <li><a href="#" className="hover:text-gray-400">Services</a></li>
-          <li><a href="#" className="hover:text-gray-400">Contact</a></li>
-        </ul>
-
-        <div className="flex space-x-4">
-          <a href="#" className="hover:text-gray-400"><i className="fab fa-facebook-f"></i></a>
-          <a href="#" className="hover:text-gray-400"><i className="fab fa-twitter"></i></a>
-          <a href="#" className="hover:text-gray-400"><i className="fab fa-linkedin-in"></i></a>
-          <a href="#" className="hover:text-gray-400"><i className="fab fa-instagram"></i></a>
+        <div className="flex gap-6 text-xl">
+          <a
+            href="https://github.com/manishmanume"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-cyan-400 transition"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/manish-mehtaa/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-cyan-400 transition"
+          >
+            <FaLinkedin />
+          </a>
         </div>
       </div>
 
-      <div className='flex'>
-        
-
-      </div>
-
-      <div className="text-center mt-8 border-t border-gray-700 pt-4">
-        <p>&copy; {new Date().getFullYear()} Manish Mehta. All rights reserved.</p>
+      <div className="text-center text-sm text-gray-400 mt-6">
+        © {new Date().getFullYear()} Your Name. All rights reserved.
       </div>
     </footer>
   );
