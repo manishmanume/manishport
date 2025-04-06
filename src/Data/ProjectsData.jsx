@@ -26,8 +26,8 @@ const projects = [
       id: 3,
       title: "PortFolio Website",
       image: PortImage,
-      frontendLink: "https://github.com/manishmanume/mycontact",
-      // liveDemo: "https://your-taskmanager-link.com",
+      frontendLink: "https://github.com/manishmanume/manishport",
+      liveDemo: "#",
       working: false,
     },
     {

@@ -66,7 +66,7 @@ const Project = () => {
                   rel="noopener noreferrer"
                   className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded-full text-xs"
                 >
-                  Frontend
+                  Frontend Code
                 </a>
               )}
               {project.backendLink && (
@@ -76,7 +76,7 @@ const Project = () => {
                   rel="noopener noreferrer"
                   className="bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded-full text-xs"
                 >
-                  Backend
+                  Backend Code
                 </a>
               )}
               {project.liveDemo && (
