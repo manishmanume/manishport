@@ -57,7 +57,7 @@ const Hero = () => {
             <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-2" />
           </button>
           <a
-            href="https://drive.google.com/file/d/1m9k1bFD5cDocS03LMSQmFiXyWGlXh_NK/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1MESsvWNjQ61xXrFTupFPGnOzP474Xmw6/view?usp=drive_link"
             className="flex items-center gap-2 text-sm sm:text-base lg:text-lg px-6 py-2 bg-orange-500 rounded-full font-medium group text-white"
             download
             target="_blank"
